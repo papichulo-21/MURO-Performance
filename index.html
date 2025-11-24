@@ -3,45 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MURO Performance Website - Coming Soon</title>
+    <title>MURO Performance - Coming Soon</title>
     <style>
-        body { 
-            margin: 0; 
-            padding: 0; 
-            text-align: center;
-            background-color: #f0f0f0;
+        body {
+            margin: 0;
+            padding: 0;
             height: 100vh;
+            background-color: #f0f0f0;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-        } 
-        .logo-container {
-            flex-grow: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
+            justify-content: space-between;
+            position: relative;
         }
-        .logo { 
-            max-width: 80%;
+
+        .background-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .logo {
+            max-width: 600px;
             height: auto;
-            display: block;
-            margin: 0 auto;
-        } 
+            margin-top: 10vh;
+            z-index: 1;
+        }
+        
         .contact-link {
             font-size: 18px;
-            color: #000000;
+            color: #ffffff;
             text-decoration: underline;
             margin-bottom: 20px;
             padding: 5px 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            z-index: 1;
         }
     </style>
 </head>
 <body>
-    <div class="logo-container">
-        <img src="MUROcolored-logo.png" alt="MURO Performance Logo" class="logo">
-    </div>
+    <img src="background.jpg" alt="Website background" class="background-img">
+    <img src="transparent-logo.png" alt="MURO Performance Logo" class="logo">
     <a href="mailto:ricardo.mr@muroperformance.com" class="contact-link">Contact Me Via Email</a>
 </body>
 </html>
