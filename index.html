@@ -35,20 +35,34 @@
         }
         
         .contact-link {
-            font-size: 18px;
+            /* FONT CHANGES */
+            font-size: 24px; /* Increased font size from 18px to 24px */
+            font-family: sans-serif; /* Changed the font style */
+            font-weight: bold; /* Made the font bolder */
+
             color: #ffffff;
-            text-decoration: underline;
-            margin-bottom: 20px;
-            padding: 5px 10px;
-            background-color: rgba(0, 0, 0, 0.6);
-            border-radius: 5px;
+            text-decoration: none; /* Removed the underline for a cleaner "button" look */
+            
+            /* SIZE CHANGES (Bigger Box) */
+            margin-bottom: 30px; /* Increased space from the bottom of the screen */
+            padding: 15px 30px; /* Increased padding inside the box */
+            
+            background-color: rgba(0, 0, 0, 0.75); /* Slightly darker background */
+            border-radius: 8px; /* Slightly more rounded corners */
             z-index: 1;
+            /* Optional: Add a slight transition effect when hovering */
+            transition: background-color 0.3s ease; 
+        }
+
+        /* Optional: Add a hover effect for user interaction */
+        .contact-link:hover {
+            background-color: rgba(0, 0, 0, 0.9);
         }
     </style>
 </head>
 <body>
     <img src="background.jpg" alt="Website background" class="background-img">
-    <img src="transparent-logo.png" alt="MURO Performance Logo" class="logo">
+    <img src="MUROcolored-logo.png" alt="MURO Performance Logo" class="logo">
     <a href="mailto:ricardo.mr@muroperformance.com" class="contact-link">Contact Me Via Email</a>
 </body>
 </html>
