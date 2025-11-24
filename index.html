@@ -1,30 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MURO Performance Website - Coming Soon</title>
     <style>
         body { 
             margin: 0; 
             padding: 0; 
             text-align: center;
+            /* Added background properties to use the SVG as the full page background */
+            background-image: url('MUROcolored-logo.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover; /* Ensures the image covers the whole screen */
+            height: 100vh; /* Makes sure the body takes up the full view height */
+            display: flex; /* Helps center the remaining content */
+            justify-content: center;
+            align-items: flex-end; /* Aligns content to the bottom of the page */
         } 
-        img { 
-            width: 100%; 
-            height: auto;
-            max-width: 600px;
-            display: block;
-            margin: 20px auto;
-        } 
+        /* Removed the img selector as the image is now the background */
         a {
             font-size: 18px;
-            color: #0000ff;
+            color: #ffffff; /* Changed color for better visibility against a potentially dark logo */
             text-decoration: underline;
+            margin-bottom: 20px; /* Adds some space above the bottom of the screen */
+            /* Added a text shadow/background for better readability over the image */
+            text-shadow: 1px 1px 3px #000; 
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 5px 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <img src="MUROcolored-logo.svg" alt="MURO Performance Logo">
+    <!-- Image tag removed, as the image is now the background -->
 
+    <!-- Removed the anchor from the mailto link to prevent scrolling behavior -->
     <a href="mailto:ricardo.mr@muroperformance.com">Contact Me Via Email</a>
 </body>
 </html>
