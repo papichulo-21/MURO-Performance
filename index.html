@@ -9,34 +9,39 @@
             margin: 0; 
             padding: 0; 
             text-align: center;
-            /* Added background properties to use the SVG as the full page background */
-            background-image: url('MUROcolored-logo.svg');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover; /* Ensures the image covers the whole screen */
-            height: 100vh; /* Makes sure the body takes up the full view height */
-            display: flex; /* Helps center the remaining content */
+            background-color: #f0f0f0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
-            align-items: flex-end; /* Aligns content to the bottom of the page */
+            align-items: center;
         } 
-        /* Removed the img selector as the image is now the background */
-        a {
+        .logo-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .logo { 
+            max-width: 80%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        } 
+        .contact-link {
             font-size: 18px;
-            color: #ffffff; /* Changed color for better visibility against a potentially dark logo */
+            color: #000000;
             text-decoration: underline;
-            margin-bottom: 20px; /* Adds some space above the bottom of the screen */
-            /* Added a text shadow/background for better readability over the image */
-            text-shadow: 1px 1px 3px #000; 
-            background-color: rgba(0, 0, 0, 0.5); 
+            margin-bottom: 20px;
             padding: 5px 10px;
-            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <!-- Image tag removed, as the image is now the background -->
-
-    <!-- Removed the anchor from the mailto link to prevent scrolling behavior -->
-    <a href="mailto:ricardo.mr@muroperformance.com">Contact Me Via Email</a>
+    <div class="logo-container">
+        <img src="MUROcolored-logo.svg" alt="MURO Performance Logo" class="logo">
+    </div>
+    <a href="mailto:ricardo.mr@muroperformance.com" class="contact-link">Contact Me Via Email</a>
 </body>
 </html>
