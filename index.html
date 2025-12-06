@@ -89,6 +89,48 @@
             display: inline-block;
             white-space: nowrap;
         }
+        
+        /* New responsive adjustments for mobile devices */
+        @media (max-width: 768px) {
+            .logo {
+                max-width: 80%;
+                top: 25%;
+            }
+
+            .text-banner {
+                font-size: 14px;
+                top: 40%;
+                white-space: normal;
+            }
+
+            .coming-soon-box {
+                position: static;
+                margin-top: 20px;
+                font-size: 24px;
+                padding: 15px 30px;
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: 0;
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                bottom: auto;
+                right: auto;
+                transform: none;
+            }
+
+            .contact-link {
+                bottom: 10px;
+                font-size: 18px;
+                padding: 10px 20px;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+            
+            body {
+                overflow-y: auto;
+                height: auto;
+            }
+        }
     </style>
 </head>
 <body>
