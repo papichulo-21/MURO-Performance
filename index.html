@@ -15,7 +15,7 @@
         }
 
         .background-img {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
@@ -89,6 +89,51 @@
             display: inline-block;
             white-space: nowrap;
         }
+
+        @media (max-width: 768px) {
+            body {
+                height: auto;
+                min-height: 100vh;
+                overflow-y: auto;
+            }
+            
+            .logo, .text-banner, .coming-soon-box, .contact-link {
+                position: relative;
+                top: auto;
+                bottom: auto;
+                left: auto;
+                right: auto;
+                transform: none;
+                width: 90%;
+                margin: 20px auto;
+                white-space: normal;
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            .logo {
+                margin-top: 50px;
+                max-width: 300px;
+            }
+
+            .text-banner {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .coming-soon-box {
+                font-size: 24px;
+                padding: 15px;
+                display: block;
+            }
+
+            .contact-link {
+                font-size: 18px;
+                padding: 10px 20px;
+                background-color: rgba(0, 0, 0, 0.7);
+                margin-bottom: 30px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -102,6 +147,11 @@
     <div class="coming-soon-box">
         Coming Soon!
     </div>
+    
+    <a href="mailto:ricardo.mr@muroperformance.com" class="contact-link">Contact Me Via Email</a>
+</body>
+</html>
+
     
     <a href="mailto:ricardo.mr@muroperformance.com" class="contact-link">Contact Me Via Email</a>
 </body>
