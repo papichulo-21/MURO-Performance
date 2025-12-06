@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MURO Performance - Coming Soon</title>
     <style>
-        body {
+        html, body {
             margin: 0;
             padding: 0;
-            height: 100vh;
+            height: 100%;
             background-color: #f0f0f0;
             position: relative;
             overflow: hidden;
@@ -91,12 +91,17 @@
         }
 
         @media (max-width: 768px) {
-            body {
+            html, body {
                 height: auto;
                 min-height: 100vh;
                 overflow-y: auto;
             }
             
+            .background-img {
+                position: absolute;
+                background-attachment: scroll;
+            }
+
             .logo, .text-banner, .coming-soon-box, .contact-link {
                 position: relative;
                 top: auto;
@@ -152,7 +157,6 @@
 </body>
 </html>
 
-    
     <a href="mailto:ricardo.mr@muroperformance.com" class="contact-link">Contact Me Via Email</a>
 </body>
 </html>
